@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link';
 import Image from 'next/image';
 import { FaRegCheckCircle } from "react-icons/fa"
 import aboutData from '@/static-data/about';
@@ -39,7 +39,9 @@ const About = () => {
                             <FaRegCheckCircle className='w-[32px] h-[32px] relative right-[10px]'/>
                           </div>
                           <div className='text-[13px]'>
-                            <a className='' href='/'>Based on 2953 reviews</a>
+                            <Link href='/'>
+                                Based on 2953 reviews
+                            </Link>
                           </div>
                         </div>
                     </div>

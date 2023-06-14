@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import servicesData from '@/static-data/services';
+import servicesData from '@/static-data/services'
 
 const Services = () => {
   return (
