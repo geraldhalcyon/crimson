@@ -17,7 +17,7 @@ export default function Navbar() {
                 <div className="justify-between mx-auto md:flex md:items-center md:px-8 lg:px-4"> 
                     <div className="flex justify-between items center px-4 py-3 md:px-0">
                         <Link href='/' className='block w-[134px] h-[63px]'>
-                            <Image src={headerData.logo} width={134} height={63} />
+                            <Image src={headerData.logo} width={134} height={63} alt='logo'/>
                         </Link>
                         <div className="md:hidden">
                             <button className="p-2 rounded-md outline-none text-2xl text-[var(--secondary-color)]" onClick={ () => setNavbar( !navbar )}>
