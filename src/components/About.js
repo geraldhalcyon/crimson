@@ -10,9 +10,9 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-10 py-[35px]">
           <div className="md:col-span-6 text-center">
               <Image className='w-[96%] h-[100%] object-cover'
-              src={aboutData.aboutImage} 
-              width={1153} height={650} 
-              alt="a group of people smiling" />
+              src={aboutData.aboutDetails.image.path} 
+              width={aboutData.aboutDetails.image.width} height={aboutData.aboutDetails.image.height} 
+              alt={aboutData.aboutDetails.image.alt} />
           </div>  
           <div className="md:col-span-4 text-center py-5 w-[100%] md:w-[80%] px-4 md:pl-[75px]">
               <div className='text-[var(--primary-color)]'>
@@ -22,15 +22,15 @@ const About = () => {
                       <div className='content h-[60%] w-[1px] bg-white absolute right-[15px] top-[15px]'></div>
                         <div className='flex items-end'>
                           <div className='text-[30px]'>
-                            4.1
-                            <span className='text-[17px]'>/5</span>
+                            {aboutData.aboutDetails.hotelReviews.hoteltopDetails.rating1}
+                            <span className='text-[17px]'>{aboutData.aboutDetails.hotelReviews.hoteltopDetails.rating2}</span>
                           </div>
                           <div className='text-[13px] relative bottom-[7px] left-[5px]'>
-                            Very good
+                            {aboutData.aboutDetails.hotelReviews.hoteltopDetails.details}
                           </div>
                         </div>
                         <div className='block'>
-                            TOP 6% of Hotels in Muntinlupa
+                            {aboutData.aboutDetails.hotelReviews.hoteltopDetails.percent}
                         </div>
                     </div>
                     <div className='flex py-[8px] px-[20px]'>
@@ -40,7 +40,7 @@ const About = () => {
                           </div>
                           <div className='text-[13px]'>
                             <Link href='/'>
-                                Based on 2953 reviews
+                                {aboutData.aboutDetails.hotelReviews.hoteltopDetails.link}
                             </Link>
                           </div>
                         </div>
@@ -48,30 +48,28 @@ const About = () => {
                   </div>
                   <div className='flex justify-around flex-wrap border-solid border-t-2 bg-[#002833]'>
                       <div className='w-[50%] md:w-auto'>
-                        <div>TripAdvisor</div>
-                        <div>4.5/5</div>
+                        <div>{aboutData.aboutDetails.hotelReviews.wb1.title}</div>
+                        <div>{aboutData.aboutDetails.hotelReviews.wb1.rating}</div>
+                      </div>
+                      <div className='w-[50%] md:w-auto'>
+                        <div>{aboutData.aboutDetails.hotelReviews.wb2.title}</div>
+                        <div>{aboutData.aboutDetails.hotelReviews.wb2.rating}</div>
+                      </div>
+                      <div className='w-[50%] md:w-auto'>
+                        <div>{aboutData.aboutDetails.hotelReviews.wb3.title}</div>
+                        <div>{aboutData.aboutDetails.hotelReviews.wb3.rating}</div>
+                      </div>
+                      <div className='w-[50%] md:w-auto'>
+                        <div>{aboutData.aboutDetails.hotelReviews.wb4.title}</div>
+                        <div>{aboutData.aboutDetails.hotelReviews.wb4.rating}</div>
                       </div>
 
-                      <div className='w-[50%] md:w-auto'>
-                        <div>Booking.com</div>
-                        <div>8.2/10</div>
-                      </div>
-
-                      <div className='w-[50%] md:w-auto'>
-                        <div>Hotels.com</div>
-                        <div>8.2/10</div>
-                      </div>
-
-                      <div className='w-[50%] md:w-auto'>
-                        <div>Expedia</div>
-                        <div>4.1/5</div>
-                      </div>
                     </div>
                   </div>
                   <div className='text-left text-[18px] leading-[27px]'>
-                    <p className='py-6'>Crimson Hotel Filinvest City, Manila is a five-star hotel located in one of the metro’s modern central business districts and premier lifestyle destinations in southern Manila. With its contemporary guestrooms, first-rate amenities, delightful dining options, and heartfelt hospitality combined with a cosmopolitan vibe, it offers a charming staycation experience to both business travelers and leisure guests.</p>
-                    <p className='py-6'>A mere 10km away from the Ninoy Aquino International Airport (NAIA), the hotel sits in a highly convenient location where it can be easily accessed via Skyway or South Luzon Expressway (SLEX).</p>
-                    <p className='py-6'>Crimson Hotel Filinvest City, Manila was certified by the Department of Tourism and recognized by World Travel & Tourism Council for being compliant with the health and hygiene standard protocols. </p>
+                    <p className='py-6'>{aboutData.aboutDetails.details.d1}</p>
+                    <p className='py-6'>{aboutData.aboutDetails.details.d2}</p>
+                    <p className='py-6'>{aboutData.aboutDetails.details.d3}</p>
                   </div> 
               </div>
           </div>
