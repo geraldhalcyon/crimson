@@ -28,9 +28,9 @@ const Services = () => {
                     className={styles.mySwiper}
                     effect="fade"
                 >
-            {servicesData.slider.map((slide) => (
+            {servicesData.slider.map((slide, index) => (
                 
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                    <div className='bg-overlay'></div>
                         <Image className='w-[100%] h-[100%] object-cover'
                         src={slide.image.path} 
