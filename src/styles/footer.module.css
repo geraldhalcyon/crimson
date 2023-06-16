@@ -1,0 +1,13 @@
+
+.blockFooter .locationList a:after {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+}
+.blockFooter .locationList:last-child a:after{
+    display: none;
+}

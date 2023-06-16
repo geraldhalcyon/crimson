@@ -1,30 +1,30 @@
 
 const servicesData = {
-    // slider: [
-    //     {
-    //         title: 'LOCAL ADVANTAGE',
-    //         description: 'Your ultimate staycations awaits in the South of Manila. Crimson Hotel Filinvest City Manila is offering specials rate for Local Residents using promo code "LOCAL"',
-    //         link: 'Read More',
-    //         path: '/',
-    //         image: {
-    //             path: '/Swimming-Pool-home-x-large.jpg',
-    //             width: 944,
-    //             height: 906,
-    //         }
-    //     },
-    //     {
-    //         title: 'Your Dream Vecation Awaits!',
-    //         link: 'Read More',
-    //         path: '/',
-    //         image: {
-    //             path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.jpg',
-    //             width: 500,
-    //             height: 300,
-    //         }
-    //     },
-    // ],
-
-    servicesImage1: "/Swimming-Pool-home-x-large.jpg",
+    slider: [
+        {
+            title: 'LOCAL ADVANTAGE',
+            description: 'Your ultimate staycations awaits in the South of Manila. Crimson Hotel Filinvest City Manila is offering specials rate for Local Residents using promo code "LOCAL"',
+            link: 'Read More',
+            path: '/',
+            image: {
+                path: '/Swimming-Pool-home-x-large.jpg',
+                width: 944,
+                height: 906,
+                alt: 'swimming pool',
+            }
+        },
+        {
+            title: 'Your Dream Vecation Awaits!',
+            link: 'Read More',
+            path: '/',
+            image: {
+                path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.jpg',
+                width: 500,
+                height: 300,
+                alt: 'Worry-free Bookings',
+            }
+        },
+    ],
     servicesDetails2: {
         title: 'Your dream Vacation',
         link: 'Read More',

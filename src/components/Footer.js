@@ -6,14 +6,13 @@ import { TfiLocationPin, TfiEmail } from "react-icons/tfi";
 import { BsTelephone } from "react-icons/bs";
 import { GrFacebookOption, GrTwitter, GrInstagram } from "react-icons/gr";
 
+import styles from "../styles/footer.module.css";
+
 const Footer = () => {
   return (
-    <footer className='font-secondary font-light px-[20px] h-[100vh] pt-[60px]'>
-      <section className='block-contact-details'>
-        <div className='lg:container'>
-          <div>
-            <h1 className='uppercase tracking-[2px] mb-[30px] text-[25px] text-center'>{footerData.footerDetails.title}</h1>
-          </div>
+    <footer className={styles.blockFooter}>
+      <section className='font-secondary font-light pt-[60px] px-[20px] md:px-[0px] lg:container'>
+          <h1 className='uppercase tracking-[2px] mb-[30px] text-[25px] text-center'>{footerData.footerDetails.title}</h1>
           <div className='grid grid-cols-1 md:grid-cols-10 flex items-center flex-wrap pb-[60px]'>
             <div className='md:col-span-2 text-center'>
                 <span className='mb-[10px] block'>{footerData.footerDetails.contactDetails.app.title}</span>
@@ -72,14 +71,65 @@ const Footer = () => {
               </Link>
             </div>
             </div>
-           <div className='flex justify-center items-center'>
-              <div className='tracking-[2px] text-[25px] mr-[10px]'>Our Commitment to your well being.</div>
-              <Link href='/' className='uppercase font-primary text-[16px] text-[var(--secondary-color)] block'>
+           <div className='text-center pb-[30px]'>
+              <div className='tracking-[2px] text-[25px] mr-[10px] inline-block'>Our Commitment to your well being.</div>
+              <Link href='/' className='uppercase font-primary text-[16px] text-[var(--secondary-color)] block inline-block'>
                 Read More 
               </Link>
            </div>
+      </section>
+      <section className='font-secondary font-light bg-top-footer px-[20px] py-[40px]'>
+        <div className='lg:container'>
+          <div className='grid grid-cols-1 md:grid-cols-10'>
+            <div className='md:col-span-3 text-center'>
+              <div>
+                <h1 className='uppercase tracking-[2px] text-[25px]'>News Letter Signup</h1>
+                <p className='text-[16px] leading-[27px] w-[80%] m-auto py-[25px]'>Enter your email below and stay updated
+                on Crimson Manila offers, events and more!</p>
+              </div>
+              <div>
+              <form action="#" method="post">
+                <input className='py-[10px] px-[12px] w-[195px] h-[47px] text-[16px]'
+                  type="email"
+                  placeholder='Enter your email here'
+                />
+                <button type="submit" className='btn-primary w-[125px] h-[47px] uppercase px-[20px] py-[15px] text-[13px] font-primary text-[var(--primary-color)]'>Subscribe</button>
+              </form>
+              </div>
+            </div>
+            <div className='md:col-span-7'>
+              <h4 className='uppercase text-[25px] text-center tracking-[2px] mb-[30px]'>Awards</h4>
+              <div className={`flex justify-between items-center flex-wrap w-[95%] m-auto  ${styles.awardsList}`}>
+              {footerData.awards.map((awardsImage, index) => (
+                    <div className={`${index === 3 ? 'order-last' : 'false'} `}>
+                      <Link href={awardsImage.image.path} target='_blank'>
+                            <Image className='max-h-[150px] max-w-[150px]'
+                            src={awardsImage.image.src} 
+                            width={awardsImage.image.width} height={awardsImage.image.height} 
+                            alt={awardsImage.image.alt} />
+                      </Link>
+                    </div>
+              ))}
+              <div>
+                <iframe allowtransparency="true" height={footerData.awardsIframe.height} scrolling="no" src={footerData.awardsIframe.src} width={footerData.awardsIframe.width}></iframe>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      <div className='font-secondary font-light bg-btm-footer px-[20px] py-[40px] text-[var(--primary-color)] text-center'>
+        <div className='lg:container'>
+          <h1 className='uppercase text-[25px] mb-[30px]'>Locations</h1>
+          <ul className='flex justify-center'>
+              {footerData.locationLinks.map((locationLinks, index) => (
+                <li key={index} className={`uppercase text-[16px] mx-[10px] relative ${styles.locationList}`}>
+                    <Link href={locationLinks.path}>{locationLinks.title}</Link>
+                </li>
+              )) }
+          </ul>
+        </div>
+      </div>
     </footer>
   )
 }
