@@ -101,7 +101,7 @@ const Footer = () => {
               <h4 className='uppercase text-[25px] text-center tracking-[2px] mb-[30px]'>Awards</h4>
               <div className={`flex justify-between items-center flex-wrap w-[95%] m-auto  ${styles.awardsList}`}>
               {footerData.awards.map((awardsImage, index) => (
-                    <div className={`${index === 3 ? 'order-last' : 'false'} `}>
+                    <div key={index} className={`${index === 3 ? 'order-last' : 'false'} `}>
                       <Link href={awardsImage.image.path} target='_blank'>
                             <Image className='max-h-[150px] max-w-[150px]'
                             src={awardsImage.image.src} 
@@ -126,7 +126,7 @@ const Footer = () => {
                 <li key={index} className={`uppercase text-[16px] mx-[10px] relative ${styles.locationList}`}>
                     <Link href={locationLinks.path}>{locationLinks.title}</Link>
                 </li>
-              )) }
+              ))}
           </ul>
         </div>
       </div>
