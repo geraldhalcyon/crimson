@@ -1,0 +1,24 @@
+.banner-container{
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .banner-container-video{
+    height:802px
+  }
+  .banner-video {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 50%;
+    pointer-events: none;
+  }
+  
+  .banner-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.3);
+  }

@@ -1,13 +1,45 @@
 
-.blockFooter .locationList a:after {
+.blockFooter .footerList a:after {
     content: "";
     position: absolute;
-    right: -12px;
+    right: 0;
     top: 0;
     width: 1px;
     height: 100%;
     background-color: #fff;
 }
-.blockFooter .locationList:last-child a:after{
+.blockFooter .footerList:last-child a:after{
     display: none;
 }
+
+
+@media only screen and (max-width: 767px) {
+    .blockFooter .footerList a:after {
+        display: none;
+    }
+    .blockFooter .awardsIframe{
+        margin: 0 45px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .blockFooter .awardsIframe{
+        margin: 0 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .blockFooter .footerList{
+        width: 100%;
+    }
+    .blockFooter .awardsRes{
+        width: 100%;
+    }
+    .blockFooter .awardsIframe{
+        margin:  0 auto;
+    }
+}
+
+
+

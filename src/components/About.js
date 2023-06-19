@@ -4,21 +4,23 @@ import Image from 'next/image';
 import { FaRegCheckCircle } from "react-icons/fa"
 import aboutData from '@/static-data/about';
 
+import styles from "../styles/aboutus.module.css";
+
 const About = () => {
   return (
     <section className='block-home-about bg-[#003240]'>
-        <div className="grid grid-cols-1 md:grid-cols-10 py-[35px]">
-          <div className="md:col-span-6 text-center">
-              <Image className='w-[96%] h-[100%] object-cover'
+        <div className="grid grid-cols-1 lg:grid-cols-10 py-[35px]">
+          <div className="lg:col-span-6 text-center">
+              <Image className='w-[100%] lg:w-[96%] h-[100%] object-cover'
               src={aboutData.aboutDetails.image.path} 
               width={aboutData.aboutDetails.image.width} height={aboutData.aboutDetails.image.height} 
               alt={aboutData.aboutDetails.image.alt} />
           </div>  
-          <div className="md:col-span-4 text-center py-5 w-[100%] md:w-[80%] px-4 md:pl-[75px]">
+          <div className={`lg:col-span-4 text-center py-5 w-[100%] lg:w-[80%] px-4 lg:pl-[75px] ${styles.aboutRes}`}>
               <div className='text-[var(--primary-color)]'>
                 <div className='border-solid border-2 border-black border-opacity-5 font-third '>
-                  <div className='flex items-center'>
-                    <div className='flex-1 flex flex-col justify-center text-left py-[8px] pr-[54px] md:px-[20px] relative'>
+                  <div className='flex items-center px-[20px] py-[20px] lg:px-[0px] lg:py-[0px]'>
+                    <div className='flex-1 flex flex-col justify-center text-left py-[8px] pr-[54px] lg:px-[20px] relative'>
                       <div className='content h-[60%] w-[1px] bg-white absolute right-[15px] top-[15px]'></div>
                         <div className='flex items-end'>
                           <div className='text-[30px]'>
@@ -35,9 +37,7 @@ const About = () => {
                     </div>
                     <div className='flex py-[8px] px-[20px]'>
                         <div className='flex items-center'>
-                          <div>
-                            <FaRegCheckCircle className='w-[32px] h-[32px] relative right-[10px]'/>
-                          </div>
+                          <FaRegCheckCircle className='w-[32px] h-[32px] relative right-[10px]'/>
                           <div className='text-[13px]'>
                             <Link href='/'>
                                 {aboutData.aboutDetails.hotelReviews.hoteltopDetails.link}
@@ -46,23 +46,24 @@ const About = () => {
                         </div>
                     </div>
                   </div>
-                  <div className='flex justify-around flex-wrap border-solid border-t-2 bg-[#002833]'>
-                      <div className='w-[50%] md:w-auto'>
+                  <div className='flex justify-around flex-wrap border-solid border-t-2 bg-[#002833] px-[20px] py-[20px] lg:px-[0px] lg:py-[0px]'>
+                      <div className='w-[100%] md:w-auto'>
                         <div>{aboutData.aboutDetails.hotelReviews.wb1.title}</div>
                         <div>{aboutData.aboutDetails.hotelReviews.wb1.rating}</div>
                       </div>
-                      <div className='w-[50%] md:w-auto'>
+                      <div className='w-[100%] md:w-auto'>
                         <div>{aboutData.aboutDetails.hotelReviews.wb2.title}</div>
                         <div>{aboutData.aboutDetails.hotelReviews.wb2.rating}</div>
                       </div>
-                      <div className='w-[50%] md:w-auto'>
+                      <div className='w-[100%] md:w-auto'>
                         <div>{aboutData.aboutDetails.hotelReviews.wb3.title}</div>
                         <div>{aboutData.aboutDetails.hotelReviews.wb3.rating}</div>
                       </div>
-                      <div className='w-[50%] md:w-auto'>
+                      <div className='w-[100%] md:w-auto'>
                         <div>{aboutData.aboutDetails.hotelReviews.wb4.title}</div>
                         <div>{aboutData.aboutDetails.hotelReviews.wb4.rating}</div>
                       </div>
+
 
                     </div>
                   </div>
