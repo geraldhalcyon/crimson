@@ -38,6 +38,24 @@ body{
   background: #333;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 75px;
+  background: #55514e;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  border: none;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background:#857f7f;
+}
 
 /* @media (prefers-color-scheme: dark) {
   :root {

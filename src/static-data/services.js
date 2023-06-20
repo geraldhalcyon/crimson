@@ -73,39 +73,6 @@ const servicesData = {
             }
         }
     ],
-
-    
-    // servicesDetails3: {
-    //     title: 'Our Guestrooms offer comfort, familiarity and homeliness',
-    //     link: 'Booking',
-    //     path: '/',
-    //     image: {
-    //         path: '/banner_premierclub.jpg',
-    //         width: 1920,
-    //         height: 700,
-    //         alt: 'OUR GUESTROOMS OFFER COMFORT, FAMILIARITY AND HOMELINESS',
-    //     }
-    // },
-    // servicesDetails4: {
-    //     title: 'Contemporary cuisine with focus on fresh & healthy',
-    //     image: {
-    //         path: '/manila-home-layer-3-b.jpg',
-    //         width: 1920,
-    //         height: 700,
-    //         alt: 'CONTEMPORARY CUISINE WITH FOCUS ON FRESH &amp; HEALTHY',
-    //     }
-    // },
-    // servicesDetails5: {
-    //     title: 'Meetings, Seminars, Conventions, Debuts, or Weedings at Crimson',
-    //     link: 'Request for a quote now',
-    //     path: '/',
-    //     image: {
-    //         path: '/manila-home-layer-4-a.jpg',
-    //         width: 1920,
-    //         height: 700,
-    //         alt: 'MEETINGS, SEMINARS, CONVENTIONS, DEBUTS, OR WEDDINGS AT CRIMSON',
-    //     }
-    // }
 }
 
 export default servicesData; 

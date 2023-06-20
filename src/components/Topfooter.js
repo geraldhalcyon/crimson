@@ -5,6 +5,7 @@ import { TfiLocationPin, TfiEmail } from "react-icons/tfi";
 import { BsTelephone } from "react-icons/bs";
 import { GrFacebookOption, GrTwitter, GrInstagram } from "react-icons/gr";
 import footerData from '@/static-data/footer'
+import Modal from '@/components/Modal';
 
 const Topfooter = () => {
   return (

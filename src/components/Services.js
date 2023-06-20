@@ -37,7 +37,7 @@ const Services = () => {
                         alt={slide.image.alt} />
                     <div className={`text-center lg:text-left text-[var(--primary-color)] bg-black md:bg-inherit relative md:absolute md:bottom-[25px] left-[0px] bottom-0 lg:left-[25px] w-[100%] md:min-h-[auto] lg:w-[95%] lg:pr-[10px] px-[20px] py-[20px] lg:px-[0px] ${styles.imgFixheight}`}>
                         <h2 className='text-[23px] uppercase font-secondary font-black tracking-[2px]'>{slide.title}</h2>
-                        <p className='text-[16px] leading-[27px] py-[16px]'>{slide.description} <span class='uppercase font-bold'>{slide.strongStyle}</span></p>
+                        <p className='text-[16px] leading-[27px] py-[16px]'>{slide.description} <span className='uppercase font-bold'>{slide.strongStyle}</span></p>
                         <Link href='/' className='py-[14px] px-[28px] w-[50%] block m-auto text-center text-[18px] rounded btn-primary hover:bg-[var(--fourth-color)]'>
                             <button className='uppercase'>{slide.link}</button>
                         </Link>

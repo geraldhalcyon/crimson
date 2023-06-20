@@ -3,15 +3,15 @@ const headerData = {
     links: [
         {
             title: "About Us",
-            path: "/about",
+            path: "/about-us",
         },
         {
             title: "Rooms & Suites",
-            path: "/rooms_suites",
+            path: "/rooms-suites",
         },
         {
             title: "Club & Suites",
-            path: "/club_suites",
+            path: "/club-suites",
         },
         {
             title: "Dinning",
@@ -27,7 +27,7 @@ const headerData = {
         },
         {
             title: "Event & Meetings",
-            path: "/event_meetings",
+            path: "/event-meetings",
         },
         {
             title: "Gallery",
