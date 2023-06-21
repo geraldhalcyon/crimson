@@ -35,7 +35,6 @@ const footerData = {
         description1:{
             title:'Get in Touch',
             btn1:'Contact Form',
-            path1:'/contact',
             btn2: 'Book Now',
             path2:'https://www.simplebooking.it/ibe/search?hid=3066&lang=EN&tt_claim_key=claim%3A6f430a1fdeb02310959f497578e3ff0297cd60e40763eb87d5718bad9f4e5929%3Aundefined%3A1687138323768',
         },

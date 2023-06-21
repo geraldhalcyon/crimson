@@ -1,4 +1,7 @@
-import React from 'react'
+"use client"
+
+import {useState} from 'react'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { TfiLocationPin, TfiEmail } from "react-icons/tfi";
@@ -8,6 +11,7 @@ import footerData from '@/static-data/footer'
 import Modal from '@/components/Modal';
 
 const Topfooter = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
         <div className='font-secondary font-light pt-[60px] px-[20px] lg:px-[0px] lg:container'>
             <h1 className='uppercase tracking-[2px] mb-[30px] text-[25px] text-center'>{footerData.footerDetails.title}</h1>
@@ -63,9 +67,8 @@ const Topfooter = () => {
             <div className='flex items-center flex-wrap justify-center pb-[30px] mb-[30px] border-b-solid border-transparent border-[1px] border-b-[#bfbfbf]'>
             <h1 className='uppercase tracking-[2px] uppercase text-[25px] md:mr-[30px] mr-[0px]'>{footerData.belowContactdetails.description1.title}</h1>
                 <div className='text-[var(--primary-color)] mt-[20px] md:mt-[0] w-[100%] md:w-auto flex flex-wrap justify-center'>
-                    <Link href={footerData.belowContactdetails.description1.path1} className='py-[15px] px-[20px] btn-secondary text-[13px] font-primary md:mr-[20px] mx-[10px] my-[10px] md:my-[0px] hover:bg-[var(--fourth-color)]'>
-                        <button className='uppercase'>{footerData.belowContactdetails.description1.btn1}</button>
-                    </Link>
+                    <button className='py-[15px] px-[20px] btn-secondary text-[13px] font-primary md:mr-[20px] mx-[10px] my-[10px] md:my-[0px] hover:bg-[var(--fourth-color)] uppercase' onClick={() => setShowModal(true)}>{footerData.belowContactdetails.description1.btn1}</button>
+                    <Modal isVisible={showModal} onClose={() => setShowModal(false)}/>
                     <Link href={footerData.belowContactdetails.description1.path2} className='py-[15px] px-[20px] btn-primary uppercase text-[13px] font-primary  md:mr-[20px] mx-[10px] my-[10px] md:my-[0px] hover:bg-[var(--fourth-color)]'>
                         <button className='uppercase'>{footerData.belowContactdetails.description1.btn2}</button>
                     </Link>

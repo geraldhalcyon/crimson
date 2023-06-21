@@ -1,12 +1,16 @@
-import React from 'react'
+'use client'
+
+import React,{ useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaRegCheckCircle } from "react-icons/fa"
 import aboutData from '@/static-data/about';
+import Reviewsmodal from '@/components/Reviewsmodal';
 
 import styles from "../styles/aboutus.module.css";
 
 const About = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <section className='block-home-about bg-[#003240]'>
         <div className="grid grid-cols-1 lg:grid-cols-10 py-[35px]">
@@ -38,11 +42,8 @@ const About = () => {
                     <div className='flex py-[8px] px-[20px]'>
                         <div className='flex items-center'>
                           <FaRegCheckCircle className='w-[32px] h-[32px] relative right-[10px]'/>
-                          <div className='text-[13px]'>
-                            <Link href='/'>
-                                {aboutData.aboutDetails.hotelReviews.hoteltopDetails.link}
-                            </Link>
-                          </div>
+                            <Reviewsmodal isVisible={showModal} onClose={() => setShowModal(false)}/>
+                            <button className='text-[13px]' onClick={() => setShowModal(true)}>{aboutData.aboutDetails.hotelReviews.hoteltopDetails.link}</button>
                         </div>
                     </div>
                   </div>

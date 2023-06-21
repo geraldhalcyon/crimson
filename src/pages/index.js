@@ -1,13 +1,13 @@
-// "use client"
+'use client'
 
-// import {Fragment, useState} from 'react'
+// import { useState } from 'react';
 
 import Layout from '../components/Layout'
 
 import Banner from '@/components/Banner';
 import About from '@/components/About';
 import Services from '@/components/Services';
-import Modal from '@/components/Modal';
+// import Reviewsmodal from '@/components/Reviewsmodal';
 
 function Home() {
   // const [showModal, setShowModal] = useState(false);
@@ -18,11 +18,8 @@ function Home() {
           <About />
           <Services />
 
-          {/* <button className='flex mt-[200px] m-auto text-white bg-blue-700 focus:outline-none rounded-lg px-5 py-2.5' onClick={() => setShowModal(true)}>
-              Form Modal
-          </button>
-          
-          <Modal isVisible={showModal} onClose={() => setShowModal(false)}/> */}
+        {/* <button className='py-[15px] px-[20px] btn-secondary text-[13px] font-primary hover:bg-[var(--fourth-color)] uppercase mt-[200px] m-auto flex text-white' onClick={() => setShowModal(true)}>View Modal</button>
+        <Reviewsmodal isVisible={showModal} onClose={() => setShowModal(false)}/> */}
         </main>
     </Layout>
   )
