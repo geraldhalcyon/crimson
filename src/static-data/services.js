@@ -19,7 +19,7 @@ const servicesData = {
             link: 'Read More',
             path: '/',
             image: {
-                path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.jpg',
+                path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.webp',
                 width: 500,
                 height: 300,
                 alt: 'Worry-free Bookings',
