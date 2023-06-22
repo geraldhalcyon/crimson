@@ -1,6 +1,6 @@
 'use client'
 
-import React,{ useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaRegCheckCircle } from "react-icons/fa"
@@ -18,7 +18,7 @@ const About = () => {
               <Image className='w-[100%] lg:w-[96%] h-[100%] object-cover'
               src={aboutData.aboutDetails.image.path} 
               width={aboutData.aboutDetails.image.width} height={aboutData.aboutDetails.image.height} 
-              alt={aboutData.aboutDetails.image.alt} priority={true}/>
+              alt={aboutData.aboutDetails.image.alt}/>
           </div>  
           <div className={`lg:col-span-4 text-center py-5 w-[100%] lg:w-[80%] px-4 lg:pl-[75px] ${styles.aboutRes}`}>
               <div className='text-[var(--primary-color)]'>
