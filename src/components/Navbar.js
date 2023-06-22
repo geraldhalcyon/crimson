@@ -26,7 +26,7 @@ export default function Navbar() {
                                 </Link>
                             </div>
                             <button className="p-2 rounded-md outline-none text-2xl text-[var(--secondary-color)]" onClick={ () => setNavbar( !navbar )}>
-                        {navbar ? <FaTimesCircle /> : <FaBars /> }
+                        {navbar ? <FaTimesCircle className='m-auto'/> : <FaBars className='m-auto'/> }<small className='text-[16px]'>Menu</small>
                             </button>
                             <Link href='/' className='md:w-[125px] lg:w-[200px] py-[10px] px-[5px] h-[100%] leading-[87px] flex justify-center items-center text-[10px] md:text-[15px] btn-primary uppercase font-primary text-[var(--primary-color)] hover:bg-[var(--fourth-color)]'>
                                 Book Now
