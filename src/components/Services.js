@@ -69,8 +69,6 @@ const Services = () => {
             <div className={`grid grid-cols-1 lg:grid-cols-10 mb-[30px] ${styles.servicesList}`} key={index}> 
                 <div className='lg:col-span-10 relative'>
                     <Image
-                    layout="responsive"
-                    objectFit='cover'
                     src={servicesDetails.image.path} 
                     width={servicesDetails.image.width} 
                     height={servicesDetails.image.height} 

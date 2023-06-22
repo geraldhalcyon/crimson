@@ -55,9 +55,9 @@ const servicesData = {
             title: 'Contemporary cuisine with focus on fresh & healthy',
             path:'',
             image: {
-                path: '/manila-home-layer-3-b.webp',
+                path: '/manila-home-layer-3-b_eswttv_c_scale_w_1833.webp',
                 width: 1833,
-                height: 668,
+                height: 646,
                 alt: 'CONTEMPORARY CUISINE WITH FOCUS ON FRESH &amp; HEALTHY',
             }
         },
@@ -66,9 +66,9 @@ const servicesData = {
             link: 'Request for a quote now',
             path: '/events-meetings',
             image: {
-                path: '/manila-home-layer-4-a.webp',
+                path: '/manila-home-layer-4-a_okqccz_c_scale_w_1833.webp',
                 width: 1833,
-                height: 668,
+                height: 646,
                 alt: 'MEETINGS, SEMINARS, CONVENTIONS, DEBUTS, OR WEDDINGS AT CRIMSON',
             }
         }
