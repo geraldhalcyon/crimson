@@ -8,7 +8,7 @@ const servicesData = {
             link: 'Read More',
             path: '/',
             image: {
-                path: '/Swimming-Pool-home-x-large.jpg',
+                path: '/Swimming-Pool-home-x-large.webp',
                 width: 944,
                 height: 906,
                 alt: 'swimming pool',
