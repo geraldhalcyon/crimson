@@ -20,8 +20,8 @@ const servicesData = {
             path: '/',
             image: {
                 path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.webp',
-                width: 500,
-                height: 300,
+                width: 944,
+                height: 906,
                 alt: 'Worry-free Bookings',
             }
         },
@@ -32,7 +32,7 @@ const servicesData = {
         link: 'Read More',
         path: '/offers',
         image: {
-            path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.jpg',
+            path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.webp',
             width: 944,
             height: 906,
             alt: 'Worry-free Bookings',

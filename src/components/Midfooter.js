@@ -23,7 +23,7 @@ const Midfooter = () => {
                     </form>
                   </div>
                   <div className='md:col-span-7 mt-[20px] md:mt-[0px]'>
-                      <h4 className='uppercase text-[25px] text-center tracking-[2px] mb-[30px]'>{footerData.awardsTitle}</h4>
+                      <h1 className='uppercase text-[25px] text-center tracking-[2px] mb-[30px]'>{footerData.awardsTitle}</h1>
                       <div className={`flex justify-center items-center flex-wrap w-[100%] md:w-[95%] m-auto  ${styles.awardsList}`}>
                           {footerData.awards.map((awardsImage, index) => (
                               <div key={index} className={`${index === 3 ? 'order-last' : 'false'} mx-[3px] my-[10px] md:my-[3px] w-[37%] md:w-auto ${styles.awardsRes}`}>
@@ -35,7 +35,7 @@ const Midfooter = () => {
                                   </Link>
                               </div>
                           ))}
-                          <iframe className={styles.awardsIframe} allowtransparency="true" height={footerData.awardsIframe.height} scrolling="no" src={footerData.awardsIframe.src} width={footerData.awardsIframe.width}></iframe>
+                          <iframe className={styles.awardsIframe} title='TrustScore' allowtransparency="true" height={footerData.awardsIframe.height} scrolling="no" src={footerData.awardsIframe.src} width={footerData.awardsIframe.width}></iframe>
                       </div>
                   </div>
               </div>
