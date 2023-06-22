@@ -53,19 +53,19 @@ const About = () => {
                     </div>
                   </div>
                   <div className='flex justify-around flex-wrap border-solid border-t-2 bg-[#002833] px-[20px] py-[20px] lg:px-[0px] lg:py-[0px]'>
-                      <div className='w-[100%] md:w-auto'>
+                      <div className='w-[50%] md:w-auto'>
                         <div>{aboutData.aboutDetails.hotelReviews.wb1.title}</div>
                         <div>{aboutData.aboutDetails.hotelReviews.wb1.rating}</div>
                       </div>
-                      <div className='w-[100%] md:w-auto'>
+                      <div className='w-[50%] md:w-auto'>
                         <div>{aboutData.aboutDetails.hotelReviews.wb2.title}</div>
                         <div>{aboutData.aboutDetails.hotelReviews.wb2.rating}</div>
                       </div>
-                      <div className='w-[100%] md:w-auto'>
+                      <div className='w-[50%] md:w-auto'>
                         <div>{aboutData.aboutDetails.hotelReviews.wb3.title}</div>
                         <div>{aboutData.aboutDetails.hotelReviews.wb3.rating}</div>
                       </div>
-                      <div className='w-[100%] md:w-auto'>
+                      <div className='w-[50%] md:w-auto'>
                         <div>{aboutData.aboutDetails.hotelReviews.wb4.title}</div>
                         <div>{aboutData.aboutDetails.hotelReviews.wb4.rating}</div>
                       </div>
@@ -73,7 +73,7 @@ const About = () => {
 
                     </div>
                   </div>
-                  <div className='text-left text-[18px] leading-[27px]'>
+                  <div className='text-left text-[18px] leading-[22px] lg:leading-[27px]'>
                     <p className='py-6'>{aboutData.aboutDetails.details.d1}</p>
                     <p className='py-6'>{aboutData.aboutDetails.details.d2}</p>
                     <p className='py-6'>{aboutData.aboutDetails.details.d3}</p>
