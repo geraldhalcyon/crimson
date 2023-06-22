@@ -17,7 +17,7 @@ export default function Navbar() {
                 <div className="justify-between mx-auto lg:flex lg:items-center lg:px-8 lg:pr-0 lg:pl-4"> 
                     <div className="flex justify-between items-center lg:px-4 lg:py-3 md:px-[0px] md:py-[0] lg:px-0">
                         <Link href='/' className='block w-[100px] lg:w-[134px] h-[100%] ml-[20px] my-[5px] lg:ml-[0px] lg:my-[0px]'>
-                            <Image src={headerData.logo} width={134} height={63} alt='logo'/>
+                            <Image src={headerData.logo} width={134} height={63} alt='logo' property='true'/>
                         </Link>
                         <div className="lg:hidden flex items-center border-l-[1px] border-solid border-[#000] pl-[8px]">
                             <div className='text-[#555] text-[12px] md:text-[14px] lg:relative lg:top-[5px] lg:right-[28px] hover:text-[var(--secondary-color)] text-right'>
