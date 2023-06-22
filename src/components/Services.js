@@ -53,7 +53,7 @@ const Services = () => {
             
             <div className='lg:col-span-5 relative text-center'>
                 <Image className='w-[100%] h-[100%] object-cover'
-                src={servicesData.servicesDetails1.image.path} width={servicesData.servicesDetails1.image.width} height={servicesData.servicesDetails1.image.height} 
+                src={servicesData.servicesDetails1.image.path} layout='responsive' width={servicesData.servicesDetails1.image.width} height={servicesData.servicesDetails1.image.height} 
                 alt={servicesData.servicesDetails1.image.alt} />
                 <div className='w-[100%] btn-primary text-[var(--primary-color)] absolute bottom-0 right-0 left-0 py-[20px]'>
                     <h2 className='font-secondary font-black tracking-[2px] mb-[20px] uppercase'>{servicesData.servicesDetails1.title}</h2>
@@ -69,8 +69,8 @@ const Services = () => {
             <div className={`grid grid-cols-1 lg:grid-cols-10 mb-[30px] ${styles.servicesList}`} key={index}> 
                 <div className='lg:col-span-10 relative'>
                     <Image className='w-[100%] md:h-[100%] h-auto object-cover'
-                    src={servicesDetails.image.path} width={servicesDetails.image.width} height={servicesDetails.image.height} 
-                    alt={servicesDetails.image.alt} />
+                    src={servicesDetails.image.path} layout='responsive' width={servicesDetails.image.width} height={servicesDetails.image.height} 
+                    alt={servicesDetails.image.alt}/>
                     <div className='static md:absolute bottom-0 left-0 text-[var(--primary-color)] text-center lg:text-left block lg:flex justify-between w-[100%] py-[40px] px-[20px] bg-gradient-to-b from-black/100 via-black/100 to-black/100 md:bg-gradient-to-b md:from-black/0 md:via-black/50 md:to-black/60'>
                         <h1 className='uppercase tracking-[2px] font-secondary font-black drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] text-[23px] lg:mr-[20px] mr-[0px]]'>{servicesDetails.title}</h1>
                         <Link href={servicesDetails.path} target='_blank' className=' btn-primary py-[15px] px-[20px] hover:bg-[var(--fourth-color)] text-[13px] mt-[20px] lg:mt-[0px] block lg:flex lg:w-auto w-[200px] m-auto lg:m-[0]'>
