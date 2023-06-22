@@ -14,16 +14,13 @@ const FormComponent = () => {
   const [submitClicked, setSubmitClicked] = useState(false);
   
 
-  const handleSubjectFocus = () => {
-    setSubjectError(false);
-  };
-
-  const handleEmailFocus = () => {
-    setEmailError(false);
-  };
-
-  const handleMessageFocus = () => {
-    setMessageError(false);
+  const handleSubjectInput = (e) => {
+    const subject = e.target.value.trim();
+    if(subject === ''){
+      setSubjectError('Subject is required.');
+    } else{
+      setSubjectError('');
+    }
   };
 
   const handleEmailInput = (e) => {
@@ -31,9 +28,18 @@ const FormComponent = () => {
     if (email === '') {
       setEmailError('Email is required.');
     } else if (!validateEmail(email)) {
-      setEmailError('Enter valid email.');
+      setEmailError('Enter a valid email.');
     } else {
       setEmailError('');
+    }
+  };
+
+  const handleMessageInput = (e) => {
+    const message = e.target.value.trim();
+    if(message === ''){
+      setMessageError('Message is required.');
+    } else{
+      setMessageError('');
     }
   };
 
@@ -46,7 +52,7 @@ const FormComponent = () => {
     let isValid = true;
 
     if (subjectInput.value.trim() === '') {
-      setSubjectError(true);
+      setSubjectError('Subject is required.');
       isValid = false;
     }
 
@@ -54,12 +60,12 @@ const FormComponent = () => {
         setEmailError('Email is required.');
         isValid = false;
       } else if (!validateEmail(emailInput.value.trim())) {
-        setEmailError('Enter valid email.');
+        setEmailError('Enter a valid email.');
         isValid = false;
       }
 
     if (messageInput.value.trim() === '') {
-        setMessageError(true);
+        setMessageError('Message is required.');
         isValid = false;
       }
     
@@ -84,13 +90,13 @@ const FormComponent = () => {
           id="subject"
           name="subject"
           className={`w-[100%] px-[12px] py-[10px] border-[1px] border-solid text-[#000] border-[#b6c6ca] text-[16px] focus:outline-none ${
-            subjectError || (submitClicked && !subjectError) ? 'border-red-500' : ''
+            subjectError || (submitClicked && subjectError !== '') ? 'border-red-500' : ''
           }`}
+          onInput={handleSubjectInput}
           placeholder='Subject *'
-          onFocus={handleSubjectFocus}
         />
         {subjectError && (
-          <p className="text-[#d93025] text-md md-1 mt-1">Subject is required. </p>
+          <p className="text-[#d93025] text-md md-1 mt-1">{subjectError}</p>
         )}
       </div>
 
@@ -102,7 +108,6 @@ const FormComponent = () => {
           className={`w-[100%] px-[12px] py-[10px] border-[1px] border-solid text-[#000] border-[#b6c6ca] text-[16px] focus:outline-none ${
             emailError || (submitClicked && emailError !== '') ? 'border-red-500' : ''
           }`}
-          onFocus={handleEmailFocus}
           onInput={handleEmailInput}
           placeholder="Email *"
         />
@@ -116,13 +121,13 @@ const FormComponent = () => {
           id="message"
           name="message"
           className={`w-[100%] px-[12px] py-[10px] border-[1px] border-solid text-[#000] border-[#b6c6ca] text-[16px] focus:outline-none ${
-            messageError || (submitClicked && !messageError) ? 'border-red-500' : ''
+            messageError || (submitClicked && messageError !== '') ? 'border-red-500' : ''
           }`}
-          onFocus={handleMessageFocus}
+          onInput={handleMessageInput}
           placeholder='Message *'
         />
         {messageError && (
-          <p className="text-[#d93025] text-md">Message is required. </p>
+          <p className="text-[#d93025] text-md">{messageError}</p>
         )}
       </div>
 

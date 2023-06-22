@@ -55,7 +55,7 @@ const servicesData = {
             title: 'Contemporary cuisine with focus on fresh & healthy',
             path:'',
             image: {
-                path: '/manila-home-layer-3-b.jpg',
+                path: '/manila-home-layer-3-b.webp',
                 width: 1920,
                 height: 700,
                 alt: 'CONTEMPORARY CUISINE WITH FOCUS ON FRESH &amp; HEALTHY',
