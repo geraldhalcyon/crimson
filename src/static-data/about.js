@@ -1,7 +1,7 @@
 const aboutData = {
     aboutDetails: {
         image:{
-            path:'/Block_Riding-Together-is-Better-x-large.jpg',
+            path:'/Block_Riding-Together-is-Better-x-large.webp',
             width: 800,
             height: 533,
             alt: 'a group of people smiling',
