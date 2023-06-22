@@ -45,9 +45,9 @@ const servicesData = {
             link: 'Booking',
             path: 'https://www.simplebooking.it/ibe/search?hid=3066&lang=EN&tt_claim_key=claim%3A6f430a1fdeb02310959f497578e3ff0297cd60e40763eb87d5718bad9f4e5929%3Aundefined%3A1687150895565',
             image: {
-                path: '/banner_premierclub.webp',
-                width: 1920,
-                height: 700,
+                path: '/banner_premierclub_scswff_c_scale_w_1833.webp',
+                width: 1833,
+                height: 668,
                 alt: 'OUR GUESTROOMS OFFER COMFORT, FAMILIARITY AND HOMELINESS',
             },
         },
