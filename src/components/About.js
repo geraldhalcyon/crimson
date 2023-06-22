@@ -17,8 +17,10 @@ const About = () => {
           <div className="lg:col-span-6 text-center">
               <Image className='w-[100%] lg:w-[96%] h-[100%] object-cover'
               src={aboutData.aboutDetails.image.path} 
-              width={aboutData.aboutDetails.image.width} 
-              height={aboutData.aboutDetails.image.height} 
+              layout='responsive' // Make the image responsive
+              width={800} // Adjust the desired display width
+              height={533} // Adjust the desired display height
+              quality={100} // Adjust the image quality if needed
               alt={aboutData.aboutDetails.image.alt} 
               property='true'
               loading="eager"
