@@ -56,8 +56,8 @@ const servicesData = {
             path:'',
             image: {
                 path: '/manila-home-layer-3-b.webp',
-                width: 1920,
-                height: 700,
+                width: 1833,
+                height: 668,
                 alt: 'CONTEMPORARY CUISINE WITH FOCUS ON FRESH &amp; HEALTHY',
             }
         },
@@ -67,8 +67,8 @@ const servicesData = {
             path: '/events-meetings',
             image: {
                 path: '/manila-home-layer-4-a.webp',
-                width: 1920,
-                height: 700,
+                width: 1833,
+                height: 668,
                 alt: 'MEETINGS, SEMINARS, CONVENTIONS, DEBUTS, OR WEDDINGS AT CRIMSON',
             }
         }
