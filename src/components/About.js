@@ -14,13 +14,13 @@ const About = () => {
   return (
     <section className='block-home-about bg-[#003240]'>
         <div className="grid grid-cols-1 lg:grid-cols-10 py-[35px]">
-          <div className="lg:col-span-6 text-center">
+          <div className="lg:col-span-6 text-center flex">
               <Image className='w-[100%] lg:w-[96%] h-[100%] object-cover'
               src={aboutData.aboutDetails.image.path} 
-              layout='responsive' // Make the image responsive
-              width={800} // Adjust the desired display width
-              height={533} // Adjust the desired display height
-              quality={100} // Adjust the image quality if needed
+              layout='responsive'
+              width={aboutData.aboutDetails.image.width}
+              height={aboutData.aboutDetails.image.height}
+              quality={100} 
               alt={aboutData.aboutDetails.image.alt} 
               property='true'
               loading="eager"

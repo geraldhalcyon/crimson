@@ -2,8 +2,8 @@ const aboutData = {
     aboutDetails: {
         image:{
             path:'/Block_Riding-Together-is-Better-x-large.jpg',
-            width: 1153,
-            height: 650,
+            width: 800,
+            height: 533,
             alt: 'a group of people smiling',
         },
         hotelReviews:{
