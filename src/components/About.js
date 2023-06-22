@@ -20,10 +20,9 @@ const About = () => {
               layout='responsive'
               width={aboutData.aboutDetails.image.width}
               height={aboutData.aboutDetails.image.height}
-              quality={100} 
               alt={aboutData.aboutDetails.image.alt} 
-              property="true"
-              loading="eager"
+              property='true'
+              loading='eager'
               />
           </div>  
           <div className={`lg:col-span-4 text-center py-5 w-[100%] lg:w-[80%] px-4 lg:pl-[75px] ${styles.aboutRes}`}>
