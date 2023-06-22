@@ -14,7 +14,7 @@ const About = () => {
   return (
     <section className='block-home-about bg-[#003240]'>
         <div className="grid grid-cols-1 lg:grid-cols-10 py-[35px]">
-          <div className="lg:col-span-6 text-center flex">
+          <div className="lg:col-span-6 text-center mr-[0px] lg:mr-[25px] flex">
               <Image className='w-[100%] lg:w-[96%] h-[100%] object-cover'
               src={aboutData.aboutDetails.image.path} 
               layout='responsive'

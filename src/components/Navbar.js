@@ -16,7 +16,7 @@ export default function Navbar() {
             <nav className="w-full min-h-[87px] m-auto bg-white fixed top-0 right-0 left-0 z-10">
                 <div className="justify-between mx-auto lg:flex lg:items-center lg:px-8 lg:pr-0 lg:pl-4"> 
                     <div className="flex justify-between items-center lg:px-4 lg:py-3 md:px-[0px] md:py-[0] lg:px-0">
-                        <Link href='/' className='block max-w-[80px] w-[100%] lg:w-[134px] h-[100%] ml-[20px] my-[5px] lg:ml-[0px] lg:my-[0px]'>
+                        <Link href='/' className='block max-w-[80px] w-[100%] lg:max-w-[134px] h-[100%] ml-[20px] my-[5px] lg:ml-[0px] lg:my-[0px]'>
                             <Image src={headerData.logo} width={134} height={63} alt='logo' property='true'/>
                         </Link>
                         <div className="lg:hidden flex items-center border-l-[1px] border-solid border-[#000] pl-[8px]">
