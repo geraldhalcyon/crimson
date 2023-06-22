@@ -22,7 +22,7 @@ const About = () => {
               height={aboutData.aboutDetails.image.height}
               quality={100} 
               alt={aboutData.aboutDetails.image.alt} 
-              property='true'
+              property="true"
               loading="eager"
               />
           </div>  
