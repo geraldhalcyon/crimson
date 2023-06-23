@@ -27,7 +27,7 @@ const Topfooter = () => {
                 </div>
                 <div className='lg:col-span-4 text-center lg:text-left'>
                     <div className='lg:flex flex-wrap items-center justify-center text-center block lg:justify-normal mb-[30px]'>
-                        <TfiLocationPin className='w-[35px] max-w-[100%] h-[35px] m-auto lg:m-none'/>
+                        <TfiLocationPin className='w-[35px] max-w-[100%] h-[35px] m-auto lg:m-[0px]'/>
                         <span className='text-[20px] lg:ml-[10px] ml-[0px]'>{footerData.footerDetails.contactDetails.description1.address}</span>
                     </div>
                     <div className='flex items-center flex-wrap relative mb-[20px] lg:mb-[0px]'>
