@@ -14,6 +14,8 @@ body{
   --secondary-color:#449bb0;
   --third-color:#555;
   --fourth-color:#857f7f;
+  --fifth-color: #664c46;
+  --sixth-color:#A6192E;
 }
 .font-primary {
   font-family: 'Libre Baskerville'; 
@@ -24,6 +26,10 @@ body{
 .font-third{
   font-family: "Helvetica", Helvetica, Arial, sans-serif;
 }
+.font-fourth{
+  font-family: 'sans-serif';
+}
+
 .btn-primary{
   background: #449bb0;
 }

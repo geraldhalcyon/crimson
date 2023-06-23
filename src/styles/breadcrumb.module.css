@@ -1,0 +1,10 @@
+.breadCrumb li:not(:last-child) {
+    padding-right: 15px;
+    position: relative;
+}
+
+.breadCrumb li:not(:last-child):after {
+    content: "/";
+    position: absolute;
+    right: 4px;
+}

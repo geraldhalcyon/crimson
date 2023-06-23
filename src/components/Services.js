@@ -22,7 +22,6 @@ const Services = () => {
             <Swiper
                     modules={[Navigation, EffectFade]}
                     navigation={true}
-                    pagination={{ clickable: true }}
                     loop={true}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}

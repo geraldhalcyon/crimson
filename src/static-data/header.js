@@ -14,8 +14,8 @@ const headerData = {
             path: "/club-suites",
         },
         {
-            title: "Dinning",
-            path: "/dinning",
+            title: "Dining",
+            path: "/dining",
         },
         {
             title: "Facilities",
