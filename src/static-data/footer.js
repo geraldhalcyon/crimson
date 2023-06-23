@@ -14,8 +14,8 @@ const footerData = {
                 },
                 image2:{
                     path:'/image_2.jpg',
-                    width:'1024',
-                    height:'1024',
+                    width:'230',
+                    height:'230',
                     alt:'qr code',
                 },
             },
