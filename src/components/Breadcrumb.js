@@ -3,7 +3,6 @@ import styles from '../styles/breadcrumb.module.css'
 
 const Breadcrumb = ({ crumbs }) => {
   return (
-    <nav>
       <ul className={`flex ${styles.breadCrumb}`}>
         {crumbs.map((crumb, index) => (
           <li key={index} className='uppercase font-fourth text-[12px]'>
@@ -17,7 +16,6 @@ const Breadcrumb = ({ crumbs }) => {
           </li>
         ))}
       </ul>
-    </nav>
   );
 };
 

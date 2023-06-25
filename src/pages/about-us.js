@@ -12,16 +12,21 @@ const about = () => {
 
   return (
         <Layout title={pageTitle}>
-          <div className='relative overflow-hidden font-secondary font-light'>
-            <Image className='object-cover object-top w-[100%] h-[300px] md:h-[805px]'
-             src={aboutData.image}
-             width={1200}
-             height={720}
-             property='true'
-            loading='eager'
-             alt='Manila About Us Page Slider'
-            />
-            <h1 className='w-[100%] absolute bottom-0 uppercase text-[var(--sixth-color)] md:text-[var(--primary-color)] text-center md:text-right text-[40px] leading-[100%] py-[20px] px-[20px] md:pr-[70px] bg-gradient-to-b from-white/100 via-white/100 to-white/100 md:bg-gradient-to-b md:from-black/0 md:via-black/50 md:to-black/60'>{pageTitle}</h1>
+          <div className='grid grid-cols-1 lg:grid-cols-10'> 
+            <div className='lg:col-span-10'>
+              <div className='relative overflow-hidden h-[300px] md:h-[805px] font-secondary font-light'>
+                <Image className='object-cover object-top w-[100%]'
+                src={aboutData.image}
+                layout='responsive'
+                width={1200}
+                height={720}
+                property='true'
+                loading='eager'
+                alt='Manila About Us Page Slider'
+                />
+                <h1 className='w-[100%] absolute bottom-0 uppercase text-[var(--sixth-color)] md:text-[var(--primary-color)] text-center md:text-right text-[40px] leading-[100%] py-[20px] px-[20px] md:pr-[70px] bg-gradient-to-b from-white/100 via-white/100 to-white/100 md:bg-gradient-to-b md:from-black/0 md:via-black/50 md:to-black/60'>{pageTitle}</h1>
+              </div>
+            </div>
           </div>
           <div className='bg-[#ebf9fc]'>
             <div className='lg:container py-[40px] md:px-[30px] px-[20px]'>

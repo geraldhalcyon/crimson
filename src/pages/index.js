@@ -1,26 +1,20 @@
-'use client'
-
-// import { useState } from 'react';
-
 import Layout from '../components/Layout'
-
-import Banner from '@/components/Banner';
-import About from '@/components/About';
-import Services from '@/components/Services';
-// import Reviewsmodal from '@/components/Reviewsmodal';
+// import Banner from '@/components/Banner';
+// import About from '@/components/About';
+// import Services from '@/components/Services';
+import homeData from '../static-data/home';
+import { Blocks } from '@/components/Blocks';
 
 function Home() {
-  // const [showModal, setShowModal] = useState(false);
+  const blocks = homeData.blocks;
   return (
     <Layout>
-         <main>
-          <Banner />
-          <About />
-          <Services />
-
-        {/* <button className='py-[15px] px-[20px] btn-secondary text-[13px] font-primary hover:bg-[var(--fourth-color)] uppercase mt-[200px] m-auto flex text-white' onClick={() => setShowModal(true)}>View Modal</button>
-        <Reviewsmodal isVisible={showModal} onClose={() => setShowModal(false)}/> */}
-        </main>
+      <main>
+        <Blocks blocks={blocks} />
+        {/* <Banner />
+        <About />
+        <Services /> */}
+      </main>
     </Layout>
   )
 }
