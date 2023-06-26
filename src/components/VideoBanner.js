@@ -1,12 +1,11 @@
 import React, { useState,useEffect } from 'react';
 
 import styles from "../styles/banner.module.css";
-import DynamicIframe from '../components/DynamicIframe';
 
 export const VideoBanner = ({block}) => {
  
-  // const [ready, setReady] = useState(false)
-  // useEffect(() => { setTimeout(() => { setReady(true) }, 3000) }, [])
+  const [ready, setReady] = useState(false)
+  useEffect(() => { setTimeout(() => { setReady(true) }, 3000) }, [])
 
   // style={{ backgroundImage: `url(${block.image.path})` }}
 
@@ -25,14 +24,14 @@ export const VideoBanner = ({block}) => {
   return (
    
         <section className='mt-[87px] min-h-[200px] m-w-[100%] relative'>
-            <div className={`overflow-hidden bg-[#f5f5f5] relative ${styles.bannerContainer}`}>
+            <div className={`overflow-hidden bg-[#f5f5f5] relative ${styles.bannerContainer}`} style={{ backgroundImage: `url(${block.image.path})` }}>
             <iframe loading="lazy"
             className={`overflow-hidden md:absolute left-0 ${styles.bannerVideo}`}
                 autoPlay
                 scrolling="no"
                 title='banner video'
-                // src={ready ? block.video : ""}
-                src={block.video}
+                src={ready ? block.video : ""}
+                // src={block.video}
             />
             {/* 
             {showVideo && (
