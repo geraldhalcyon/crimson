@@ -1,11 +1,12 @@
 import Layout from '@/components/Layout'
 import Breadcrumb from '@/components/Breadcrumb';
 import Image from 'next/image'
+import aboutData from '@/non-home-static-data/about'
 import crumbs from '@/non-home-static-data/breadcrumbData';
 import Link from 'next/link'
 
 
-const about = ({block}) => {
+const about = () => {
   const pageTitle = crumbs.about.label;
 
 
