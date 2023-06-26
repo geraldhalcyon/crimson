@@ -7,10 +7,10 @@ const homeData = {
             title: 'ALABANG. IN A HEARTBEAT',
             video: 'https://sunishsadasivan.hippovideo.io/video/embed/LDkuGaDtcqQja1LrnZ12p9bpm1rlm_xzovd-KwfzXD0?org_tok=EkftNVDFrILIkMQrfCy1vQ&autoplay=true&loop=true&controls=false',
             image: {
-                path:'/Block_Riding-Together-is-Better-x-large.webp',
-                width: 800,
-                height: 533,
-                alt: 'a group of people smiling',
+                path:'/LDkuGaDtcqQja1LrnZ12p9bpm1rlm_xzovd-KwfzXD0_rsd9ex_c_scale_w_768.webp',
+                width: 1200,
+                height: 644,
+                alt: 'upside view',
             },
         },
         {
