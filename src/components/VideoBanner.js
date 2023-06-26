@@ -6,12 +6,12 @@ export const VideoBanner = ({ block }) => {
   useEffect(() => {
     setTimeout(() => {
       setReady(true);
-    }, 8000);
+    }, 6000);
   }, []);
 
   const [showVideo, setShowVideo] = useState(false);
   useEffect(() => {
-    const delay = 8000; 
+    const delay = 6000; 
 
     const timeout = setTimeout(() => {
       setShowVideo(true);
@@ -24,7 +24,7 @@ export const VideoBanner = ({ block }) => {
     <section className='mt-[87px] min-h-[200px] m-w-[100%] relative'>
       <div
         className={`overflow-hidden bg-[#f5f5f5] relative ${styles.bannerContainer}`}
-        style={{ backgroundImage: `url(${block.image.path})` }}
+        style={showVideo ? {backgroundImage: 'none'} :{ backgroundImage: `url(${block.image.path})` }}
       >
         {ready && (
           <>
