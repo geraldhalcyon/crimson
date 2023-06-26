@@ -6,7 +6,7 @@ import DynamicIframe from '../components/DynamicIframe';
 export const VideoBanner = ({block}) => {
  
   const [ready, setReady] = useState(false)
-  useEffect(() => { setTimeout(() => { setReady(true) }, 0) }, [])
+  useEffect(() => { setTimeout(() => { setReady(true) }, 3000) }, [])
 
   // style={{ backgroundImage: `url(${block.image.path})` }}
 
