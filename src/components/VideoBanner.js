@@ -5,7 +5,7 @@ import styles from "../styles/banner.module.css";
 export const VideoBanner = ({block}) => {
  
   const [ready, setReady] = useState(false)
-  useEffect(() => { setTimeout(() => { setReady(true) }, 3000) }, [])
+  useEffect(() => { setTimeout(() => { setReady(true) }, 5000) }, [])
 
   // style={{ backgroundImage: `url(${block.image.path})` }}
 
@@ -25,6 +25,8 @@ export const VideoBanner = ({block}) => {
    
         <section className='mt-[87px] min-h-[200px] m-w-[100%] relative'>
             <div className={`overflow-hidden bg-[#f5f5f5] relative ${styles.bannerContainer}`} style={{ backgroundImage: `url(${block.image.path})` }}>
+            
+            
             <iframe loading="lazy"
             className={`overflow-hidden md:absolute left-0 ${styles.bannerVideo}`}
                 autoPlay

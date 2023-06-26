@@ -5,7 +5,7 @@ import crumbs from '@/non-home-static-data/breadcrumbData';
 import Link from 'next/link'
 
 
-const AboutNonHome = ({block}) => {
+const about = ({block}) => {
   const pageTitle = crumbs.about.label;
 
 
@@ -88,5 +88,5 @@ const AboutNonHome = ({block}) => {
   )
 }
 
-export default AboutNonHome 
+export default about 
  
