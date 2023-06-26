@@ -114,6 +114,7 @@ const homeData = {
             servicesDetails1: {
                 title: 'Your dream Vacation',
                 link: 'Read More',
+                description: '<p>Crimson Hotel Filinvest City, Manila was certified by the Department of Tourism and recognized by World Travel & Tourism Council for being compliant with the health and hygiene standard protocols.</p>',
                 path: '/offers',
                 image: {
                     path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.webp',

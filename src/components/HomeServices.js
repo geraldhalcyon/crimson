@@ -58,8 +58,9 @@ export const HomeServices = ({block}) => {
                 width={block.servicesDetails1.image.width} 
                 height={block.servicesDetails1.image.height} 
                 alt={block.servicesDetails1.image.alt} />
-                <div className='w-[100%] btn-primary text-[var(--primary-color)] absolute bottom-0 right-0 left-0 py-[20px]'>
+                <div className='w-[100%] btn-primary text-[var(--primary-color)] absolute bottom-0 right-0 left-0 py-[20px] px-[20px]'>
                     <h2 className='font-secondary font-black tracking-[2px] mb-[20px] uppercase'>{block.servicesDetails1.title}</h2>
+                    <div className='text-[16px] leading-[27px] py-[16px]' contentEditable='true' dangerouslySetInnerHTML={{ __html: block.servicesDetails1.description}}></div>
                     <Link href={block.servicesDetails1.path} className='font-secondary font-light py-[14px] px-[40px] w-[185px] m-auto text-center text-[18px] border-white border-[1px] rounded btn-primary block hover:bg-white hover:text-[#449bb0]'>
                         <button className='uppercase'>{block.servicesDetails1.link}</button>
                     </Link>

@@ -48,7 +48,7 @@ const footerData = {
 
     footerForm:{
         title:'News Letter Signup',
-        description: 'Enter your email below and stay updated on Crimson Manila offers, events and more!',
+        description: '<p>Enter your email below and stay updated on Crimson Manila offers, events and more!</p>',
     },
 
     awardsTitle: 'Awards',

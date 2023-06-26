@@ -13,7 +13,7 @@ const Midfooter = () => {
               <div className='grid grid-cols-1 md:grid-cols-10'>
                   <div className='md:col-span-3 text-center'>
                     <h1 className='uppercase tracking-[2px] text-[25px]'>{footerData.footerForm.title}</h1>
-                    <p className='text-[16px] leading-[27px] w-[100%] md:w-[80%] m-auto py-[25px]'>{footerData.footerForm.description}</p>
+                    <div className='text-[16px] leading-[27px] w-[100%] md:w-[80%] m-auto py-[25px]' contentEditable='true' dangerouslySetInnerHTML={{ __html: footerData.footerForm.description}}></div>
                     <form action="#" method="post">
                         <input className='py-[10px] px-[12px] w-[195px] h-[47px] text-[16px]'
                             type="email"

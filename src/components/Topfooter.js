@@ -76,8 +76,8 @@ const Topfooter = () => {
             </div>
             <div className='text-center pb-[30px]'>
                 <div className='tracking-[2px] text-[25px] mr-[0px] md:mr-[10px] inline-block'>{footerData.belowContactdetails.description2.title}</div>
-                    <Link href={footerData.belowContactdetails.description2.path} className='uppercase font-primary text-[16px] text-[var(--secondary-color)] block inline-block'>
-                {footerData.belowContactdetails.description2.link}
+                    <Link href={footerData.belowContactdetails.description2.path} className='font-primary text-[16px] text-[var(--secondary-color)] block inline-block'>
+                        <button className='uppercase'>{footerData.belowContactdetails.description2.link}</button>
                     </Link>
             </div>
         </div>
