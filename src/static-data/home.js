@@ -7,10 +7,10 @@ const homeData = {
             title: 'ALABANG. IN A HEARTBEAT',
             video: 'https://sunishsadasivan.hippovideo.io/video/embed/LDkuGaDtcqQja1LrnZ12p9bpm1rlm_xzovd-KwfzXD0?org_tok=EkftNVDFrILIkMQrfCy1vQ&autoplay=true&loop=true&controls=false',
             image: {
-                path:'/LDkuGaDtcqQja1LrnZ12p9bpm1rlm_xzovd-KwfzXD0_rsd9ex_c_scale_w_768.webp',
+                path:'/video-poster.webp',
                 width: 1200,
                 height: 644,
-                alt: 'upside view',
+                alt: 'a chef serving a food to a customer',
             },
         },
         {
