@@ -6,12 +6,12 @@ export const VideoBanner = ({ block }) => {
   useEffect(() => {
     setTimeout(() => {
       setReady(true);
-    }, 10000);
+    }, 8000);
   }, []);
 
   const [showVideo, setShowVideo] = useState(false);
   useEffect(() => {
-    const delay = 10000; // Delay in milliseconds (e.g., 5000 = 5 seconds)
+    const delay = 8000; 
 
     const timeout = setTimeout(() => {
       setShowVideo(true);
