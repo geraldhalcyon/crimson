@@ -93,8 +93,8 @@ const homeData = {
                     path: '/',
                     image: {
                         path: '/Swimming-Pool-home-x-large.webp',
-                        width: 1200,
-                        height: 800,
+                        width: 800,
+                        height: 533,
                         alt: 'swimming pool',
                     }
                 },
@@ -104,8 +104,8 @@ const homeData = {
                     path: '/',
                     image: {
                         path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.webp',
-                        width: 1200,
-                        height: 800,
+                        width: 800,
+                        height: 533,
                         alt: 'Worry-free Bookings',
                     }
                 },
