@@ -16,7 +16,6 @@ export const Blocks = ({blocks}) => {
             : block.blockType === 'home_services' ? 
             <HomeServices block={block} /> 
             : '' ? "" : ''}
-
             </div>
         ))}
 

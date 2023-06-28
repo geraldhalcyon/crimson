@@ -93,8 +93,8 @@ const homeData = {
                     path: '/',
                     image: {
                         path: '/Swimming-Pool-home-x-large.webp',
-                        // width: 800,
-                        // height: 533,
+                        width: 800,
+                        height: 533,
                         alt: 'swimming pool',
                     }
                 },
@@ -104,8 +104,8 @@ const homeData = {
                     path: '/',
                     image: {
                         path: '/Crimson---Flexible-Re-booking-Promo_studies2-02-(2)-home-x-large.webp',
-                        // width: 800,
-                        // height: 533,
+                        width: 800,
+                        height: 533,
                         alt: 'Worry-free Bookings',
                     }
                 },
@@ -159,45 +159,6 @@ const homeData = {
                 }
             ],
 
-        },
-        {
-            blockType: 'non_home_about',
-            title: 'About Us',
-            slug: '/',
-            image:{
-                path:'/about-us.webp',
-                width:1200,
-                height:720,
-                alt:'Manila About Us Page Slider',
-            },
-            descriptionTop:'<p>Offering breathtaking design and stunning views over Alabang, Crimson Hotel Filinvest City, Manila stands as an iconic architectural marvel in Southern Manila. Opt for a City View room to enjoy breathtaking vistas of the gorgeous skyline. If you can turn your eyes away from the window, head down to sample outbursts of Mediterranean fare at Café Eight and share romantic after-dinner cocktails at the Lobby Lounge. Looking for the perfect spot to unwind? The photogenic poolside is bedecked with luxurious Dedon nest chairs and plush loungers that set the tone for a relaxing retreat. Every element is richly-designed and continues to innovate, as the hotel continuously elevates its facilities to enrich your stay.</p>',
-            descriptionMid:'<p>Come and experience the refreshing enhancements that we’ve done today. Imagine peering palm trees lining the thoroughfares, picture-perfect sundowners and a view of the glitzy skyscrapers above Southern Manila. Before you know it, you too will be under its spell. Alabang is known as a flourishing city that is not as crowded as its neighbors in the greater Metro Manila. Crimson Hotel Filinvest City, Manila perfectly sits just by the border of Skyway, easily accessible to major roads, yet delivers a graceful urban oasis for your refuge from the daily grind. The hotel’s location in the heart of Alabang positions you just steps away from trendy shopping malls, dining options and plenty of exciting activities to discover.</p>',
-            descriptionBtm:'<p>Show-stopping piece Strikingly Filipino yet inspired by the global art scene, stop and stare at Crimson’s treasure trove of perfectly-crafted Filipino artworks spread across the gallery, public spaces and function rooms of the hotel. Dressed to the nines Elegant, bold and stylish -- each Crimson host reverberates the core of our service with couture ensembles designed by the Philippines’ most celebrated fashion designer – Mr. Francis Libiran.</p>',
-            image1:{
-                path:'/aboutimg_01-x-large.webp',
-                width:800,
-                height:533,
-                alt:'a man and woman in the hallway',
-            },
-            image2:{
-                path:'/aboutimg_02-x-large.webp',
-                width:800,
-                height:533,
-                alt:'bedroom',
-            },
-            image3:{
-                path:'/aboutimg_03-x-large.webp',
-                width:800,
-                height:533,
-                alt:'a flower and painting in the hallway',
-            },
-            image4:{
-                path:'/aboutimg_04-x-large.webp',
-                width:800,
-                height:533,
-                alt:'occasion',
-            },
-            btn:'Book Now',
         },
     ],
 }

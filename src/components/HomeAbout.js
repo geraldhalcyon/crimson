@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaRegCheckCircle } from "react-icons/fa"
-import Reviewsmodal from '@/components/Reviewsmodal';
+import ReviewsModal from '@/components/ReviewsModal';
 
 import styles from "../styles/aboutus.module.css";
 
@@ -46,7 +46,7 @@ export const HomeAbout = ({block}) => {
                 <div className='flex py-[8px] px-[20px]'>
                     <div className='flex items-center'>
                       <FaRegCheckCircle className='w-[32px] h-[32px] relative right-[10px]'/>
-                        <Reviewsmodal block={block} isVisible={showModal} onClose={() => setShowModal(false)}/>
+                        <ReviewsModal block={block} isVisible={showModal} onClose={() => setShowModal(false)}/>
                         <button className='text-[13px]' onClick={() => setShowModal(true)}>{block.reviews.topDescription.link}</button>
                     </div>
                 </div>

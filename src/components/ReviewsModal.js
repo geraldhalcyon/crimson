@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Reviewsmodal = ({ block, isVisible, onClose }) => {
+const ReviewsModal = ({ block, isVisible, onClose }) => {
   const [selectedCategory, setSelectedCategory] = useState('');
 
   const toggleCategory = (category) => {
@@ -93,4 +93,4 @@ const Reviewsmodal = ({ block, isVisible, onClose }) => {
   );
 };
 
-export default Reviewsmodal;
+export default ReviewsModal;
