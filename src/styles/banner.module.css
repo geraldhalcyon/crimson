@@ -30,16 +30,29 @@
   }
   @media only screen and (max-width: 1024px){
     .bannerContainer{
-      min-height: 475px;
+      min-height: 470px;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
   @media only screen and (max-width: 767px){
     .bannerContainer{
-      min-height: auto;
+      min-height: 300px;
+      background-size: cover;
     }
     .bannerContainer iframe{
       position: static;
+      height: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 400px){
+    .bannerContainer{
+      min-height: 160px;
+    }
+    .bannerContainer iframe{
+      height: 160px;
     }
   }
 

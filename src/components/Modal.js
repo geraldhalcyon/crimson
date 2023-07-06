@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 
 function validateEmail(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -12,6 +13,7 @@ const FormComponent = () => {
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
   const [submitClicked, setSubmitClicked] = useState(false);
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
   
 
   const handleSubjectInput = (e) => {
@@ -50,6 +52,12 @@ const FormComponent = () => {
     const messageInput = document.getElementById('message');
 
     let isValid = true;
+
+    const recaptchaValue = document.getElementById("g-recaptcha-response").value;
+    if (!recaptchaValue) {
+      alert('Error');
+      return;
+    }
 
     if (subjectInput.value.trim() === '') {
       setSubjectError('Subject is required.');
@@ -140,11 +148,14 @@ const FormComponent = () => {
           className='w-[100%] px-[12px] py-[10px] border-[1px] border-solid text-[#000] border-[#b6c6ca] text-[16px] focus:outline-none'
         ></textarea>
       </div>
-
+      <div className="mb-4">
+        <ReCAPTCHA sitekey="6Lfw-_smAAAAAAhShBcjSXhdk1rYRgh4WxBorMKD" />
+      </div>
       <button
-        type='submit'
-        name='submit'
-        className='text-[13px] uppercase px-[20px] py-[15px] font-primary text-[var(--primary-color)] bg-[var(--secondary-color)] hover:bg-[var(--fourth-color)]'
+        type="submit"
+        name="submit"
+        className="text-[13px] uppercase px-[20px] py-[15px] font-primary text-[var(--primary-color)] bg-[var(--secondary-color)] hover:bg-[var(--fourth-color)]"
+        disabled={!recaptchaValue} // Disable the button when reCAPTCHA is not validated
       >
         Submit
       </button>
