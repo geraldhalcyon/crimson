@@ -149,7 +149,7 @@ const FormComponent = () => {
         ></textarea>
       </div>
       <div className="mb-4">
-        <ReCAPTCHA sitekey="6Lfw-_smAAAAAAhShBcjSXhdk1rYRgh4WxBorMKD" />
+        <ReCAPTCHA sitekey="6Lc3gf0mAAAAAHGvE4vK9jNFfqeqCAlI8opS-Yc9" />
       </div>
       <button
         type="submit"
