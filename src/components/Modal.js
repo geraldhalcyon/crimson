@@ -151,14 +151,14 @@ const FormComponent = () => {
       <div className="mb-4">
         <ReCAPTCHA sitekey="6Lfw-_smAAAAAAhShBcjSXhdk1rYRgh4WxBorMKD" />
       </div>
-      {/* <button
+      <button
         type="submit"
         name="submit"
         className="text-[13px] uppercase px-[20px] py-[15px] font-primary text-[var(--primary-color)] bg-[var(--secondary-color)] hover:bg-[var(--fourth-color)]"
         disabled={!recaptchaValue} // Disable the button when reCAPTCHA is not validated
       >
         Submit
-      </button> */}
+      </button>
     </form>
 
     
