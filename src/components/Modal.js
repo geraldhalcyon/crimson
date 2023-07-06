@@ -81,7 +81,7 @@ const FormComponent = () => {
 
     if (isValid) {
 
-      console.log('Form submitted!');
+      alert('Form submitted!');
     }
   };
 
