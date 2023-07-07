@@ -25,6 +25,7 @@ const Topfooter = () => {
                         <Image className='w-[100px] h-[100px] m-auto' src={footerData.footerDetails.contactDetails.app.image2.path} width={footerData.footerDetails.contactDetails.app.image2.width} height={footerData.footerDetails.contactDetails.app.image2.height} alt={footerData.footerDetails.contactDetails.app.image2.alt} />
                     </div>
                 </div>
+                
                 <div className='lg:col-span-4 text-center lg:text-left'>
                     <div className='lg:flex flex-wrap items-center justify-center text-center block lg:justify-normal mb-[30px]'>
                         <TfiLocationPin className='w-[35px] max-w-[100%] h-[35px] m-auto lg:m-[0px]'/>

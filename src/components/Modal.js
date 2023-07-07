@@ -14,6 +14,7 @@ const FormComponent = () => {
   const [messageError, setMessageError] = useState(false);
   const [submitClicked, setSubmitClicked] = useState(false);
   const [recaptchaValue, setRecaptchaValue] = useState(null);
+  const [recaptchaError, setRecaptchaError] = useState('');
   
 
   const handleSubjectInput = (e) => {
@@ -55,8 +56,8 @@ const FormComponent = () => {
 
     const recaptchaValue = document.getElementById("g-recaptcha-response").value;
     if (!recaptchaValue) {
-      alert('Error');
-      return;
+      setRecaptchaError('reCAPTCHA validation error.');
+      isValid = false;
     }
 
     if (subjectInput.value.trim() === '') {
@@ -83,6 +84,11 @@ const FormComponent = () => {
 
       alert('Form submitted!');
     }
+  };
+
+  const handleRecaptchaChange = (value) => {
+    setRecaptchaValue(value);
+    setRecaptchaError('');
   };
 
   return (
@@ -149,13 +155,20 @@ const FormComponent = () => {
         ></textarea>
       </div>
       <div className="mb-4">
-        <ReCAPTCHA sitekey="6Lc3gf0mAAAAAHGvE4vK9jNFfqeqCAlI8opS-Yc9" />
+        <ReCAPTCHA
+          sitekey="6Lc3gf0mAAAAAHGvE4vK9jNFfqeqCAlI8opS-Yc9"
+          onChange={handleRecaptchaChange}
+        />
+        {recaptchaError && (
+          <p className="text-[#d93025] text-md mt-1">{recaptchaError}</p>
+        )}
       </div>
+
       <button
         type="submit"
         name="submit"
         className="text-[13px] uppercase px-[20px] py-[15px] font-primary text-[var(--primary-color)] bg-[var(--secondary-color)] hover:bg-[var(--fourth-color)]"
-       // Disable the button when reCAPTCHA is not validated
+        disabled={!recaptchaValue}
       >
         Submit
       </button>
